@@ -34,3 +34,14 @@ Data: r
 66	13.285963	192.168.0.2	192.168.0.1	TELNET	68	Telnet Data ...
 Data: \r
 ```
+
+## 3. ETHERNET - FRAME
+
+A l'aide d'un décodeur hexadécimal, on converti la trame en données lisibles et on trouve les données suivantes :
+
+```
+Hypertext Transfer Protocol
+    GET / HTTP/1.1\r\n
+    Authorization: Basic Y29uZmk6ZGVudGlhbA==\r\n
+    Credentials: confi:dential
+```

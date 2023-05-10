@@ -67,3 +67,8 @@ Hypertext Transfer Protocol
     [Full request URI: http://twitter.com/statuses/replies.xml]
     [HTTP request 1/1]
 ```
+
+# 5. BLUETOOTH - UNKNOWN FILE
+
+On ouvre le fichier avec l'extension .bin et on ouvre l'onglet ```Wireless```  et cliquer sur ```bluetooth devices```;
+Nous pouvons voir l'adresse MAC et le nom du téléphone et on n'a plus qu'à suivre l'instruction du sujet;

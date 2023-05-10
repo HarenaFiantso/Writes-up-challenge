@@ -8,7 +8,7 @@ En utilisant Wireshark, le logiciel utilisé pour capturer les paquets et lire u
 #8 4.216600 10.20.144.150 → 10.20.144.151 FTP 81 Request: USER cdts3500
 #9 4.217350 10.20.144.151 → 10.20.144.150 FTP 91 Response: 331 Enter password.
 #10 4.217630 10.20.144.150 → 10.20.144.151 TCP 66 35974 → 21 [PSH, ACK] Seq=16 Ack=114 Win=32648 Len=0 TSval=1657564500 TSecr=1657394000
-#11 7.639420 10.20.144.150 → 10.20.144.151 FTP 81 Request: PASS cdts3500
+#11 7.639420 10.20.144.150 → 10.20.144.151 FTP 81 Request: PASS ********
 ```
 
 ## 2. TELNET - AUTHENTIFICATION
@@ -24,13 +24,13 @@ Puis en suivant les packets suivants, on le mot de pass parmis les packets suiva
 
 ```
 58	10.704378	192.168.0.2	192.168.0.1	TELNET	67	Telnet Data ...
-Data: u
+Data: *
 60	11.144054	192.168.0.2	192.168.0.1	TELNET	67	Telnet Data ...
-Data: s
+Data: *
 62	11.625626	192.168.0.2	192.168.0.1	TELNET	67	Telnet Data ...
-Data: e
+Data: *
 64	11.931320	192.168.0.2	192.168.0.1	TELNET	67	Telnet Data ...
-Data: r
+Data: *
 66	13.285963	192.168.0.2	192.168.0.1	TELNET	68	Telnet Data ...
 Data: \r
 ```
@@ -43,7 +43,7 @@ A l'aide d'un décodeur hexadécimal, on converti la trame en données lisibles 
 Hypertext Transfer Protocol
     GET / HTTP/1.1\r\n
     Authorization: Basic Y29uZmk6ZGVudGlhbA==\r\n
-    Credentials: confi:dential
+    Credentials: *************
 ```
 
 # 4. AUTHENTIFICATION TWITTER
@@ -60,7 +60,7 @@ Hypertext Transfer Protocol
     Accept-Language: en-us\r\n
     Accept-Encoding: gzip, deflate\r\n
     Authorization: Basic dXNlcnRlc3Q6cGFzc3dvcmQ=\r\n
-        Credentials: usertest:password
+        Credentials: usertest:********
     Connection: keep-alive\r\n
     Host: twitter.com\r\n
     \r\n
